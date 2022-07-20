@@ -1,0 +1,621 @@
+/* обнуление и кроссбраузерность */
+
+* {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+/* шапка сайта */
+header {
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: #103456;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    header {
+        width: 100%;
+        height: 10%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    header {
+        width: 100%;
+        height: 9%;
+        padding-top: 3%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    header {
+        width: 100%;
+        height: 7%;
+        padding-top: 0.5%;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 699px) {
+    header {
+        width: 100%;
+        height: 7%;
+        padding-top: 4%;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+    header {
+        width: 100%;
+        height: 6%;
+        padding-top: 3.5%;
+    }
+}
+
+.webName {
+    margin-left: 2%;
+    font-size: 25px;
+    color: #6A88A2;
+    font-weight: 700;
+    /* font-style: italic; */
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .webName {
+        margin-left: 2%;
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .webName {
+        margin-left: 2%;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    .webName {
+        margin-left: 2%;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 699px) {}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+    .webName {
+        margin-left: 2%;
+        font-size: 15px;
+    }
+}
+
+.webName:hover {
+    color: #708DAD;
+}
+
+.foolSizeMenu {
+    width: 40%;
+    display: inline-flex;
+    font-size: 25px;
+    justify-content: space-around;
+    margin-left: 35%;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .foolSizeMenu {
+        width: 35%;
+        font-size: 25px;
+        margin-left: 30%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .foolSizeMenu {
+        width: 35%;
+        font-size: 25px;
+        margin-left: 25%;
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    .foolSizeMenu {
+        width: 45%;
+        font-size: 25px;
+        margin-left: 10%;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 699px) {
+    .foolSizeMenu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+    .foolSizeMenu {
+        display: none;
+    }
+}
+
+.foolSizeMenu a {
+    color: whitesmoke;
+}
+
+.foolSizeMenu a:hover {
+    /* color: #708DAD; */
+    color: wheat;
+}
+
+.basket {
+    margin-top: -1%;
+    font-size: 35px;
+    color: #6A88A2;
+    margin-left: 5%;
+}
+
+.basket:hover {
+    font-size: 35px;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .basket {
+        margin-top: -1%;
+        font-size: 35px;
+        margin-left: 9%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .basket {
+        margin-top: -1%;
+        font-size: 45px;
+        margin-left: 5%;
+    }
+}
+
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    .basket {
+        margin-top: -1%;
+        font-size: 40px;
+        margin-left: 2%;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 699px) {
+    .basket {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+    .basket {
+        display: none;
+    }
+}
+
+/* .................меню бургер........................ */
+.burger {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: -5px;
+    right: 10px;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.burger span {
+    position: relative;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -1.5px;
+}
+
+.burger span,
+.burger span::before,
+.burger span::after {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #6A88A2;
+    outline: 1px solid transparent;
+    -webkit-transition-property: background-color, -webkit-transform;
+    -moz-transition-property: background-color, -moz-transform;
+    -o-transition-property: background-color, -o-transform;
+    transition-property: background-color, transform;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.burger span::before,
+.burger span::after {
+    position: absolute;
+    content: "";
+}
+
+.burger span::before {
+    top: -9px;
+}
+
+.burger span::after {
+    top: 9px;
+}
+
+.burger.clicked span {
+    background-color: transparent;
+}
+
+.burger.clicked span::before {
+    -webkit-transform: translateY(9px) rotate(45deg);
+    -moz-transform: translateY(9px) rotate(45deg);
+    -ms-transform: translateY(9px) rotate(45deg);
+    -o-transform: translateY(9px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg);
+}
+
+.burger.clicked span::after {
+    -webkit-transform: translateY(-9px) rotate(-45deg);
+    -moz-transform: translateY(-9px) rotate(-45deg);
+    -ms-transform: translateY(-9px) rotate(-45deg);
+    -o-transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.burger.clicked span:before,
+.burger.clicked span:after {
+    background-color: #ffffff;
+}
+
+.burger:hover {
+    cursor: pointer;
+}
+
+/*  NAV
+  ========================================== */
+nav {
+    background-color: #294E78;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+    overflow-y: auto;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -moz-transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -o-transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+nav.show {
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+@media (min-width: 667px) {
+    nav {
+        padding: 120px 90px 70px 90px;
+    }
+}
+
+/*  OVERLAY
+  ========================================== */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #6A88A2;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.overlay.show {
+    opacity: 0.8;
+    visibility: visible;
+}
+
+nav ul {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    padding-left: 4%;
+}
+
+nav li {
+    margin-top: 40px;
+}
+
+nav a {
+    color: whitesmoke;
+}
+
+.burgerMenu {
+    display: none;
+}
+
+@media screen and (min-width: 400px) and (max-width: 699px) {
+    .burgerMenu {
+        display: block;
+    }
+
+    .burger {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        top: 5px;
+        right: 10px;
+        border-radius: 4px;
+        z-index: 10;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+    .burgerMenu {
+        display: block;
+    }
+
+    .burger {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        top: -5px;
+        right: 10px;
+        border-radius: 4px;
+        z-index: 10;
+    }
+}
+
+.fonPage {
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    /* background-image: url(./IMG/fon2.jpg); */
+    background-image: url(./IMG/12122.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fonPageText h1 {
+    padding-left: 10%;
+    line-height: 120px;
+    font-size: 60px;
+    font-weight: 700;
+    background-image: linear-gradient(to left, #103456, #6A88A2);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .fonPage {
+        padding-top: 10%;
+    }
+
+    .fonPageText h1 {
+        padding-left: 10%;
+        line-height: 100px;
+        font-size: 60px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .fonPage {
+        padding-top: 20%;
+    }
+
+    .fonPageText h1 {
+        padding-left: 10%;
+        line-height: 90px;
+        font-size: 60px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1000px) {
+    .fonPage {
+        padding-top: 20%;
+    }
+
+    .fonPageText h1 {
+        padding-left: 7%;
+        line-height: 90px;
+        font-size: 60px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    .fonPage {
+        padding-top: 20%;
+    }
+
+    .fonPageText h1 {
+        padding-left: 7%;
+        line-height: 90px;
+        font-size: 50px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 699px) {
+    .fonPage {
+        padding-top: 10%;
+    }
+
+    .fonPageText h1 {
+        padding-left: 5%;
+        line-height: 70px;
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+    .fonPage {
+        padding-top: 10%;
+    }
+
+    .fonPageText h1 {
+        padding-left: 5%;
+        line-height: 50px;
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: #103456;
+    width: 100%;
+    height: 25%;
+    padding-top: 1%;
+    padding-left: 7%;
+}
+
+footer i {
+    color: #294E78;
+    font-size: 25px;
+}
+
+footer a {
+    color: whitesmoke;
+    font-size: 20px;
+    margin-left: 2%;
+}
